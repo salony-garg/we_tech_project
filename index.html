@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img" />
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">Stages & Checklist</a>
+        <a href="#" class="nav-item">Upload Docs</a>
+        <a href="#" class="nav-item">Preferred Vendors</a>
+        <a href="#" class="nav-item">Tech Stack</a>
+        <a href="#" class="nav-item">Targets</a>
+        <a href="#" class="nav-item">Zee Sales Targets</a>
+        <a href="#" class="nav-item">MAI Settings</a>
+        <a href="#" class="nav-item">Pending Questions</a>
+      </nav>
+
+      <!-- Logout -->
+      <div class="logout">
+        <a href="#">Logout</a>
+      </div>
+    </aside>
+
+<!-- Header / Topbar -->
+<header class="topbar">
+  <!-- hamburger shows only on tablet/mobile -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+    <!-- simple icon -->
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="topbar-spacer"></div>
+
+  <div class="topbar-actions">
+    <!-- round icon button (gear) -->
+    <button class="icon-btn" aria-label="Settings">
+      <!-- gear svg -->
+      <img src="./Vector.png" alt="User" />
+    </button>
+
+    <!-- avatar (dropdown hook ready) -->
+    <button class="avatar-btn" aria-label="Account">
+      <img src="./img.png" alt="User" />
+    </button>
+  </div>
+</header>
+
+<!-- overlay for mobile sidebar -->
+<div class="sidebar-overlay" id="sidebarOverlay" hidden></div>
+
+
+   <!-- Dashboard Layout -->
+<div class="dashboard-container">
+
+<!-- Account Progress -->
+<div class="account-card">
+  <!-- Heading -->
+  <h3 class="card-heading">Account Progress</h3>
+
+  <!-- Progress Circle -->
+      <div class="progress-container">
+        <svg class="progress-ring" width="148" height="148">
+          <circle class="progress-ring-bg" cx="74" cy="74" r="66" />
+          <circle class="progress-ring-fill" cx="74" cy="74" r="66" />
+        </svg>
+        <div class="progress-text">85%</div>
+      </div>
+
+  <!-- Steps Completed -->
+    <div class="steps-card">
+      <div class="steps-section">
+        <h3>Steps Completed</h3>
+        <ul>
+          <li>
+            <div class="left">
+              <span class="dot"></span>
+              <p>Profile Setup</p>
+            </div>
+            <img src="./tick.png" alt="done" class="tick">
+          </li>
+          <li>
+            <div class="left">
+              <span class="dot"></span>
+              <p>Initial Training</p>
+            </div>
+            <img src="./tick.png" alt="done" class="tick">
+          </li>
+          <li>
+            <div class="left">
+              <span class="dot"></span>
+              <p>Legal Documents</p>
+            </div>
+            <img src="./tick.png" alt="done" class="tick">
+          </li>
+        </ul>
+      </div>
+
+      <div class="steps-section remaining">
+        <h3>Steps Remaining</h3>
+        <ul>
+          <li>
+            <div class="left">
+              <span class="dot"></span>
+              <p>Financial Integration</p>
+            </div>
+            <img src="./tick.png" alt="pending" class="tick gray">
+          </li>
+          <li>
+            <div class="left">
+              <span class="dot"></span>
+              <p>Final Review</p>
+            </div>
+            <img src="./tick.png" alt="pending" class="tick gray">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Total Franchisees -->
+<div class="card">
+<div class="card-1">
+  <h3 class="heading">Total Franchisees Onboard</h3>
+
+  <!-- Number + Growth + Avatars -->
+  <div class="number-badge">
+    <span class="main-value">14</span>
+    <div class="badge">
+        <img src="./icon.png" alt="Growth">
+        <span class="text">7.4%</span>
+    </div>
+
+    <div class="avatar-group">
+      <img src="./group.png" alt="avatar">
+    </div>
+  </div>
+
+  <!-- Progress Bars -->
+  <div class="progress-bars">
+    <span class="bar stage1"></span>
+    <span class="bar stage2"></span>
+    <span class="bar stage3"></span>
+  </div>
+
+  <!-- Stage List -->
+  <ul class="stages">
+    <li><span class="dot stage1"></span> Stage 1 (Initial Inquiry) <span class="count">02</span></li>
+    <li><span class="dot stage2"></span> Stage 2 (Document Submission) <span class="count">07</span></li>
+    <li><span class="dot stage3"></span> Stage 3 (Training) <span class="count">05</span></li>
+  </ul>
+</div>
+
+    <!-- Financial Wellbeing -->
+    <div class="card-2">
+      <h3>Financial Wellbeing</h3>
+      <div class="value-row">
+  <div class="value-left">
+    <span class="number">20</span>
+    <span class="label">Total Franchisees</span>
+  </div>
+  
+  <div class="badge">
+        <img src="./icon.png" alt="Growth">
+        <span class="text">2.1%</span>
+    </div>
+</div>
+      <div class="targets">
+  <div>
+    <p>Target</p>
+    <h4>$500,000</h4>
+  </div>
+  <div>
+    <p>Current</p>
+    <h4>$450,000</h4>
+  </div>
+</div>
+</div>
+</div>
+    <!-- Key Insights -->
+    
+<div class = "card">
+    <div class="card-3">
+  <h3>Key Insights & Feedback</h3>
+
+  <div class="insight-row">
+    <!-- Left: metric -->
+    <div class="metric">
+      <div class="metric-value">10%</div>
+      <div class="metric-label">Sales Growth</div>
+    </div>
+
+    <!-- Right: logo above badge -->
+    <div class="side">
+      <img src="./key.png" alt="Franchise logo" class="brand" />
+      <span class="top-badge">Top Performer</span>
+    </div>
+  <hr class="divider" />
+</div>
+  <!-- Feedback block -->
+  <div class="feedback-box">
+    <div class="fb-title">Feedback</div>
+    <div class="fb-line">
+      <span class="dot"></span>
+      <span>Franchisees are requesting more detailed training materials.</span>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Prospect Leads -->
+    <div class="card-4">
+  <h3>Prospect Leads</h3>
+
+  <div class="lead">
+    <div class="left">
+      <img src="./img1.png" alt="Wade Warren" class="avatar" />
+      <span class="name">Wade Warren</span>
+    </div>
+    <span class="stage">Stage: <span class="stage-status">Initial Inquiry</span></span>
+  </div>
+
+  <div class="lead">
+    <div class="left">
+      <img src="./img2.png" alt="Ava Wright" class="avatar" />
+      <span class="name">Ava Wright</span>
+    </div>
+    <span class="stage">Stage: <span class="stage-status">Initial Inquiry</span></span>
+  </div>
+
+  <div class="lead">
+    <div class="left">
+      <img src="./img3.png" alt="Cody Fisher" class="avatar" />
+      <span class="name">Cody Fisher</span>
+    </div>
+    <span class="stage">Stage: <span class="stage-status">Initial Inquiry</span></span>
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- My Uploads Section -->
+
+
+  
+</body>
+</html>
